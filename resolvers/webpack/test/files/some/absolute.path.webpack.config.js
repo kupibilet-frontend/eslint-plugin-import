@@ -5,8 +5,11 @@ module.exports = {
     alias: {
       'foo': path.join(__dirname, 'absolutely', 'goofy', 'path', 'foo.js'),
     },
-    modulesDirectories: ['node_modules', 'bower_components'],
-    root: path.join(__dirname, 'src'),
+    modules: [
+      path.join(__dirname, 'src'),
+      'node_modules',
+      'bower_components',
+    ],
   },
 
   externals: [
